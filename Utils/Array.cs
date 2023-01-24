@@ -1,6 +1,6 @@
 public class Program
 {
-    public static void Main(string[] args)
+    public static void Bowl(string[] args)
     {
         int[] Soup = new int[15];
         Random rand = new Random();
