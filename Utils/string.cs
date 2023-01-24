@@ -42,21 +42,39 @@ namespace MyUtilities
 
         public static string Reverse(string s) 
         {
-            foreach(int letter in s)
+            /*To be continued*/
+            
+            for(int i = s.Length; i > 0; i--)
             {
-
+                
             }
 
         }
 
-        public static int CountVowels() 
-        {
-
+        public static int CountVowels(string s) 
+        {   
+            int vowel = 0;
+            for(int i = 0; i<s.Length; i++)
+            {
+                if(s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u')
+                {
+                    vowel++;
+                }
+            }
+            return vowel; 
         }
 
-        public static int CountConsonants() 
+        public static int CountConsonants(string s) 
         {
-
+             int consonant = 0;
+            for(int i = 0; i<s.Length; i++)
+            {
+                if(s[i] != 'a' && s[i] != 'e' && s[i] != 'i' && s[i] != 'o' && s[i] != 'u')
+                {
+                    consonant++;
+                }
+            }
+            return consonant; 
         }
 
         public static bool HasLetter() 
