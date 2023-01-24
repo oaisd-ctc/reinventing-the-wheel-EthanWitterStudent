@@ -15,6 +15,20 @@ public class Program
 
         int MaximumOfSoup = Max(Soup);
         Console.WriteLine(MaximumOfSoup);
+
+        int[] TomatoSoup = SortAscending(Soup);
+        Console.WriteLine("Sorted small to big:");
+        for(int i = 0; i < TomatoSoup.Length; i++) {
+            Console.Write(TomatoSoup[i] + " ");
+        }
+        Console.WriteLine("");
+
+        int[] BrocolliCheddarSoup = SortDescending(Soup);
+        Console.WriteLine("Sorted big to small:");
+        for(int i = 0; i < BrocolliCheddarSoup.Length; i++) {
+            Console.Write(BrocolliCheddarSoup[i] + " ");
+        }
+        Console.WriteLine("");
     }
 
     public static int Average (int[] Soup) {
@@ -57,6 +71,43 @@ public class Program
                 }
             }
         }
+        return Soup;
+
+    }
+
+    public static int[] SortDescending (int[] Soup) {
+        int TempNum = 0;
+        for (int i = 0; i <= Soup.Length - 1; i++) {
+            for (int iTheSecond = i + 1; iTheSecond < Soup.Length; iTheSecond++) {
+                if (Soup[i] < Soup[iTheSecond]) {
+                    TempNum = Soup[i];
+                    Soup[i] = Soup[iTheSecond];
+                    Soup[iTheSecond] = TempNum;
+                }
+            }
+        }
+        return Soup;
+
+    }
+
+    public static int Sum (int[] Soup) {
+        int Sum = 0;
+        for(int i = 0; i < Soup.Length; i++) {
+            Sum = Sum + Soup[i];
+        }
+        return Sum;
+    }
+
+    public static int Product (int[] Soup) {
+        int Product = 1;
+        for(int i = 0; i < Soup.Length; i++) {
+            Product = Product * Soup[i];
+        }
+        return Product;
+    }
+
+    public static int[] Reverse (int[] Soup) {
+        int[] NewSoup = new int[Soup.Length];
         return Soup;
 
     }
