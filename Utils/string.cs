@@ -2,7 +2,15 @@ namespace MyUtilities
 /*They have to be under 1 namespace */
 {
     public static class StringUtils 
-    {
+    {   /*Note: Summaries are ABOVE their respective functions*/
+
+        ///<summary>
+        ///Captilizes an entire string
+        ///</summary>
+        ///<param name="s"> The string going in
+        ///<returns>
+        ///output, the capitalized version of s
+        ///</returns>
         public static string ToUpper(string s) 
         {
         string output = ""; 
@@ -41,16 +49,17 @@ namespace MyUtilities
             return z;
         }
 
-        /* public static string Reverse(string s) 
-        {
-            /*To be continued*/ 
-            
-           /* for(int i = s.Length; i > 0; i--)
-            {
-                
-            }
+        public static string Reverse(string s) 
+        {    
+        char[] NotSoup = new char[s.Length];
+        int iTheSecond = 0;
+        for(int i = s.Length - 1; i >= 0; i--) {
+            NotSoup[iTheSecond] = s[i];
+            iTheSecond++;
+        }
 
-        } */
+        return new string(NotSoup); 
+        } 
 
         public static int CountVowels(string s) 
         {   
@@ -128,6 +137,7 @@ namespace MyUtilities
 
         public static bool HasLetters(string s) 
         { /*Does this work? ....probably not, same issue as HasLetter*/
+          /*Update: this will likely need to be reworked*/
              if (s == null)
             {
                 return false;
