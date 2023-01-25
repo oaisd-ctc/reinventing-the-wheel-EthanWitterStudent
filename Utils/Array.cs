@@ -12,7 +12,7 @@ public class Program
             Console.Write(Soup[i] + " ");
         }
         Console.WriteLine("");
-
+        /*
         int MaximumOfSoup = Max(Soup);
         Console.WriteLine(MaximumOfSoup);
 
@@ -28,7 +28,16 @@ public class Program
         for(int i = 0; i < BrocolliCheddarSoup.Length; i++) {
             Console.Write(BrocolliCheddarSoup[i] + " ");
         }
-        Console.WriteLine("");
+        Console.WriteLine("");*/
+
+        /*int[] TomatoSoup = Reverse(Soup);
+        Console.WriteLine("Reversed:");
+        for(int i = 0; i < TomatoSoup.Length; i++) {
+            Console.Write(TomatoSoup[i] + " ");
+        }
+        Console.WriteLine("");*/
+        int MedianOfSoup = Median(Soup);
+        Console.WriteLine(MedianOfSoup);
     }
 
     public static int Average (int[] Soup) {
@@ -72,7 +81,6 @@ public class Program
             }
         }
         return Soup;
-
     }
 
     public static int[] SortDescending (int[] Soup) {
@@ -108,7 +116,18 @@ public class Program
 
     public static int[] Reverse (int[] Soup) {
         int[] NewSoup = new int[Soup.Length];
-        return Soup;
+        int iTheSecond = 0;
+        for(int i = Soup.Length - 1; i >= 0; i--) {
+            NewSoup[iTheSecond] = Soup[i];
+            iTheSecond++;
+        }
+        return NewSoup;
+    }
 
+    public static int Median (int[] Soup) {
+        int[] NewSoup = SortAscending(Soup);
+        int i = NewSoup.Length / 2;
+        int Median = NewSoup[i];
+        return Median;
     }
 }
