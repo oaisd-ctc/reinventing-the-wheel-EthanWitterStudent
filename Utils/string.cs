@@ -78,10 +78,35 @@ namespace MyUtilities
             return consonant; 
         }
 
-        /* public static bool HasLetter(string s, string t) 
+         public static bool HasLetter(string s, string t) 
         {
-           
-        }  */
+           for(int i = 0; i < s.Length; i++) 
+           {
+            if (s[i] == t[0])
+            {
+                for(int g = 0; g <= t.Length; g++)
+                {
+                    if (t[g] == s[i]+g)
+                    {
+                        continue;
+                    }
+                    else if (g == t.Length)
+                    {
+                        return true; 
+                    }
+                    else 
+                    {
+                        break; 
+                    }
+                }
+            }
+            else 
+            {
+             continue; 
+            }
+           }
+          return false; 
+        }  
 
         public static bool HasWord(string s) 
         {
