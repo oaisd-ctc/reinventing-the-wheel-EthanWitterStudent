@@ -80,8 +80,8 @@ namespace MyUtilities
 
         /* public static bool HasLetter(string s, string t) 
         {
-         
-        } */
+           
+        }  */
 
         public static bool HasWord(string s) 
         {
@@ -118,10 +118,24 @@ namespace MyUtilities
 
         }
 
-       /* public static bool IsSussy(string s) 
-        { /*Same issue as HasLetter*/
-
-      /*  } */
-
+       public static bool IsSussy(string s) 
+    { /*...Gosh I hope this works*/
+        foreach (char letter in s)
+        {
+            if (letter == 'a' || letter == 'm' || letter == 'o' || letter == 'g' || letter == 'u' || letter == 's')
+            {
+                return true;
+            }
+            else if (letter == 'A' || letter == 'M' || letter == 'O' || letter == 'G' || letter == 'U' || letter == 'S')
+            {
+                return true;
+            }
+            else 
+            {
+                return false;
+            }
+        }
+      return false;
+    } 
     }
 }
