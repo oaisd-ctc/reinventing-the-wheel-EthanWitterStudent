@@ -130,4 +130,11 @@ public class Program
         int Median = NewSoup[i];
         return Median;
     }
+
+    public static int Range (int[] Soup) {
+        int MaxOfSoup = Max(Soup);
+        int MinOfSoup = Min(Soup);
+        int Range = MaxOfSoup - MinOfSoup;
+        return Range;
+    }
 }
