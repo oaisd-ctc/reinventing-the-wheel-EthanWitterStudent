@@ -132,7 +132,7 @@ namespace MyUtilities
             }
             else 
             {
-                return false;
+                continue;
             }
         }
       return false;
