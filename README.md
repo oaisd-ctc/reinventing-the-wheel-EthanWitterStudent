@@ -156,3 +156,11 @@ Sorts the array's values from largest to smallest
 Ex.{2, 4, 6, 7, 1} would return {7, 6, 4, 2, 1}
 
 #### Sum 
+Finds the sum of every value in the array
+
+Ex.{2, 4, 6, 7, 1} would return 20
+
+#### Product
+Finds the product of every value in the array
+
+Ex.{2, 4, 6, 7, 1} would return 336
