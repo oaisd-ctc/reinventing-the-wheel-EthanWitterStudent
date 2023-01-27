@@ -17,7 +17,7 @@ public class ArrayUtils
         ///</summary>
         ///<param name="Soup"> The array going in </param>
         ///<returns>
-        ///Average, the average of Soup
+        ///Average, the average of the array
         ///</returns>
     public static int Average (int[] Soup) {
         int Average = 0;
@@ -34,7 +34,7 @@ public class ArrayUtils
         ///</summary>
         ///<param name="Soup"> The Array going in </param>
         ///<returns>
-        ///Max, the largest number in Soup
+        ///Maximum, the largest number in Soup
         ///</returns>
     public static int Max (int[] Soup) {
         int Max = 0;
@@ -46,6 +46,14 @@ public class ArrayUtils
         return Max;
     }
 
+
+     ///<summary>
+        ///Finds the smallest number in an array
+        ///</summary>
+        ///<param name="Soup"> The Array going in </param>
+        ///<returns>
+        ///Minimum, the smallest number in Soup
+        ///</returns>
     public static int Min (int[] Soup) {
         int Min = Soup[0];
         for(int i = 0; i < Soup.Length; i++) {
@@ -56,6 +64,14 @@ public class ArrayUtils
         return Min;
     }
 
+
+     ///<summary>
+        ///sorts the array's values from smallest number to largest
+        ///</summary>
+        ///<param name="Soup"> The Array going in </param>
+        ///<returns>
+        ///the array sorted from smallest to largest
+        ///</returns>
     public static int[] SortAscending (int[] Soup) {
         int TempNum = 0;
         for (int i = 0; i <= Soup.Length - 1; i++) {
@@ -70,6 +86,14 @@ public class ArrayUtils
         return Soup;
     }
 
+
+     ///<summary>
+        ///sorts the array's values from largest number to smallest
+        ///</summary>
+        ///<param name="Soup"> The Array going in </param>
+        ///<returns>
+        ///the array sorted from largest to smallest
+        ///</returns>
     public static int[] SortDescending (int[] Soup) {
         int TempNum = 0;
         for (int i = 0; i <= Soup.Length - 1; i++) {
