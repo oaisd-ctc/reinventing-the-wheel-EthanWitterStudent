@@ -32,9 +32,9 @@ public class ArrayUtils
     }
 
     public static int Min (int[] Soup) {
-        int Min = 0;
+        int Min = Soup[0];
         for(int i = 0; i < Soup.Length; i++) {
-            if (Min < Soup[i]) {
+            if (Min > Soup[i]) {
                 Min = Soup[i];
             }
         }
@@ -173,9 +173,9 @@ public class ArrayUtils
     }
 
     public static double Min (double[] Soup) {
-        double Min = 0;
+        double Min = Soup[0];;
         for(int i = 0; i < Soup.Length; i++) {
-            if (Min < Soup[i]) {
+            if (Min > Soup[i]) {
                 Min = Soup[i];
             }
         }
