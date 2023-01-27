@@ -175,6 +175,11 @@ Finds the median of the array
 
 Ex.{2, 4, 6, 7, 1} would return 4
 
+#### Range
+Finds the range of the array
+
+Ex.{2, 4, 6, 7, 1} would return 6
+
 #### Mode 
 Finds the mode of the array
 

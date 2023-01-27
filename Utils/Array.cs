@@ -173,6 +173,13 @@ public class ArrayUtils
         int Median = NewSoup[i];
         return Median;
     }
+    ///<summary>
+    ///Finds the Range value of an array
+    ///</summary>
+    ///<param name="Soup"> The Array going in </param>
+    ///<returns>
+    ///the range of the array
+    ///</returns>
 
     public static int Range (int[] Soup) {
         int MaxOfSoup = Max(Soup);
@@ -180,6 +187,13 @@ public class ArrayUtils
         int Range = MaxOfSoup - MinOfSoup;
         return Range;
     }
+    ///<summary>
+    ///Finds the Mode value of an array
+    ///</summary>
+    ///<param name="Soup"> The Array going in </param>
+    ///<returns>
+    ///the mode of the array
+    ///</returns>
 
     public static int[] Mode (int[] Soup) {
         int CountOne = 0;
@@ -223,7 +237,13 @@ public class ArrayUtils
         return NewerSoup;
     }
 
-    //Doubles \/
+    ///<summary>
+    ///Finds the Average value of an array
+    ///</summary>
+    ///<param name="Soup"> The Array going in </param>
+    ///<returns>
+    ///Average, the average of the array
+    ///</returns>
     public static double Average (double[] Soup) {
         double Average = 0;
         for(int i = 0; i < Soup.Length; i++) {
@@ -232,6 +252,13 @@ public class ArrayUtils
         Average = Average / Soup.Length;
         return Average;
     }
+         ///<summary>
+        ///Finds the largest number in an array
+        ///</summary>
+        ///<param name="Soup"> The Array going in </param>
+        ///<returns>
+        ///Maximum, the largest number in Soup
+        ///</returns>
 
     public static double Max (double[] Soup) {
         double Max = 0;
@@ -242,6 +269,13 @@ public class ArrayUtils
         }
         return Max;
     }
+     ///<summary>
+        ///Finds the smallest number in an array
+        ///</summary>
+        ///<param name="Soup"> The Array going in </param>
+        ///<returns>
+        ///Minimum, the smallest number in Soup
+        ///</returns>
 
     public static double Min (double[] Soup) {
         double Min = Soup[0];;
@@ -252,6 +286,13 @@ public class ArrayUtils
         }
         return Min;
     }
+     ///<summary>
+        ///sorts the array's values from smallest number to largest
+        ///</summary>
+        ///<param name="Soup"> The Array going in </param>
+        ///<returns>
+        ///the array sorted from smallest to largest
+        ///</returns>
 
     public static double[] SortAscending (double[] Soup) {
         double TempNum = 0;
@@ -266,6 +307,13 @@ public class ArrayUtils
         }
         return Soup;
     }
+     ///<summary>
+        ///sorts the array's values from largest number to smallest
+        ///</summary>
+        ///<param name="Soup"> The Array going in </param>
+        ///<returns>
+        ///the array sorted from largest to smallest
+        ///</returns>
 
     public static double[] SortDescending (double[] Soup) {
         double TempNum = 0;
@@ -281,6 +329,13 @@ public class ArrayUtils
         return Soup;
 
     }
+    ///<summary>
+    ///finds the sum of all the values in the array
+    ///</summary>
+    ///<param name="Soup"> The Array going in </param>
+    ///<returns>
+    ///the sum of the array
+    ///</returns>
 
     public static double Sum (double[] Soup) {
         double Sum = 0;
@@ -289,6 +344,13 @@ public class ArrayUtils
         }
         return Sum;
     }
+    ///<summary>
+    ///finds the product of all the values in the array
+    ///</summary>
+    ///<param name="Soup"> The Array going in </param>
+    ///<returns>
+    ///the product of the array
+    ///</returns>
 
     public static double Product (double[] Soup) {
         double Product = 1;
@@ -297,6 +359,13 @@ public class ArrayUtils
         }
         return Product;
     }
+    ///<summary>
+    ///takes an array and reverses the order of it's values
+    ///</summary>
+    ///<param name="Soup"> The Array going in </param>
+    ///<returns>
+    ///the array in reverse order
+    ///</returns>
 
     public static double[] Reverse (double[] Soup) {
         double[] NewSoup = new double[Soup.Length];
@@ -307,6 +376,13 @@ public class ArrayUtils
         }
         return NewSoup;
     }
+    ///<summary>
+    ///Finds the Median value of an array
+    ///</summary>
+    ///<param name="Soup"> The Array going in </param>
+    ///<returns>
+    ///the median of the array
+    ///</returns>
 
     public static double Median (double[] Soup) {
         double[] NewSoup = SortAscending(Soup);
@@ -314,6 +390,13 @@ public class ArrayUtils
         double Median = NewSoup[i];
         return Median;
     }
+    ///<summary>
+    ///Finds the Range value of an array
+    ///</summary>
+    ///<param name="Soup"> The Array going in </param>
+    ///<returns>
+    ///the range of the array
+    ///</returns>
 
     public static double Range (double[] Soup) {
         double MaxOfSoup = Max(Soup);
@@ -321,6 +404,13 @@ public class ArrayUtils
         double Range = MaxOfSoup - MinOfSoup;
         return Range;
     }
+    ///<summary>
+    ///Finds the Mode value of an array
+    ///</summary>
+    ///<param name="Soup"> The Array going in </param>
+    ///<returns>
+    ///the mode of the array
+    ///</returns>
 
     public static double[] Mode (double[] Soup) {
         int CountOne = 0;
