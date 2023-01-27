@@ -109,6 +109,14 @@ public class ArrayUtils
 
     }
 
+
+    ///<summary>
+    ///finds the sum of all the values in the array
+    ///</summary>
+    ///<param name="Soup"> The Array going in </param>
+    ///<returns>
+    ///the sum of the array
+    ///</returns>
     public static int Sum (int[] Soup) {
         int Sum = 0;
         for(int i = 0; i < Soup.Length; i++) {
@@ -117,6 +125,14 @@ public class ArrayUtils
         return Sum;
     }
 
+
+    ///<summary>
+    ///finds the product of all the values in the array
+    ///</summary>
+    ///<param name="Soup"> The Array going in </param>
+    ///<returns>
+    ///the product of the array
+    ///</returns>
     public static int Product (int[] Soup) {
         int Product = 1;
         for(int i = 0; i < Soup.Length; i++) {
@@ -125,6 +141,14 @@ public class ArrayUtils
         return Product;
     }
 
+
+    ///<summary>
+    ///takes an array and reverses the order of it's values
+    ///</summary>
+    ///<param name="Soup"> The Array going in </param>
+    ///<returns>
+    ///the array in reverse order
+    ///</returns>
     public static int[] Reverse (int[] Soup) {
         int[] NewSoup = new int[Soup.Length];
         int iTheSecond = 0;
@@ -135,6 +159,14 @@ public class ArrayUtils
         return NewSoup;
     }
 
+    
+    ///<summary>
+    ///Finds the Median value of an array
+    ///</summary>
+    ///<param name="Soup"> The Array going in </param>
+    ///<returns>
+    ///the median of the array
+    ///</returns>
     public static int Median (int[] Soup) {
         int[] NewSoup = SortAscending(Soup);
         int i = NewSoup.Length / 2;
