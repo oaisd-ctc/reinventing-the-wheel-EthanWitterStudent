@@ -164,3 +164,18 @@ Ex.{2, 4, 6, 7, 1} would return 20
 Finds the product of every value in the array
 
 Ex.{2, 4, 6, 7, 1} would return 336
+
+#### Reverse
+Reverses the order of the arry
+
+Ex.{2, 4, 6, 7, 1} would return {1, 7, 6, 4, 2}
+
+#### Median
+Finds the median of the array
+
+Ex.{2, 4, 6, 7, 1} would return 4
+
+#### Mode 
+Finds the mode of the array
+
+Ex.{2, 4, 6, 7, 1} would return {2, 4, 6, 7, 1}
