@@ -184,3 +184,6 @@ Ex.{2, 4, 6, 7, 1} would return 6
 Finds the mode of the array
 
 Ex.{2, 4, 6, 7, 1} would return {2, 4, 6, 7, 1}
+
+### MIT License
+This project uses the MIT License
