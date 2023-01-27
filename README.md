@@ -129,3 +129,30 @@ Multiplies a number by -1 to negate the number
 Ex. 91 would return -91
 
 ### Array Functions
+
+#### Average
+Finds the average of an array
+
+Ex.{2, 4, 6, 7, 1} would return 4
+
+#### Max
+Finds the largest number in an array
+
+Ex.{2, 4, 6, 7, 1} would return 7
+
+#### Min
+Finds the smallest number in an array
+
+Ex.{2, 4, 6, 7, 1} would return 1
+
+#### SortAscending
+Sorts the array's values from smallest to largest
+
+Ex.{2, 4, 6, 7, 1} would return {1, 2, 4, 6, 7}
+
+#### SortDescending
+Sorts the array's values from largest to smallest
+
+Ex.{2, 4, 6, 7, 1} would return {7, 6, 4, 2, 1}
+
+#### Sum 
