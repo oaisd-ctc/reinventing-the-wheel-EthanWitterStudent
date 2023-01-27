@@ -1,47 +1,14 @@
-public class Program
+namespace MyUtilities;
+
+public class ArrayUtils
 {
     public static void Bowl(string[] args)
     {
-        int[] Soup = new int[15];
+        /*int[] Soup = new int[15];
         Random rand = new Random();
         for(int i = 0; i < Soup.Length; i++) {
             Soup[i] = rand.Next(1, 101);
-        }
-        Console.WriteLine("Randomly Generated Numbers:");
-        for(int i = 0; i < Soup.Length; i++) {
-            Console.Write(Soup[i] + " ");
-        }
-        Console.WriteLine("");
-        /*
-        int MaximumOfSoup = Max(Soup);
-        Console.WriteLine(MaximumOfSoup);
-
-        int[] TomatoSoup = SortAscending(Soup);
-        Console.WriteLine("Sorted small to big:");
-        for(int i = 0; i < TomatoSoup.Length; i++) {
-            Console.Write(TomatoSoup[i] + " ");
-        }
-        Console.WriteLine("");
-
-        int[] BrocolliCheddarSoup = SortDescending(Soup);
-        Console.WriteLine("Sorted big to small:");
-        for(int i = 0; i < BrocolliCheddarSoup.Length; i++) {
-            Console.Write(BrocolliCheddarSoup[i] + " ");
-        }
-        Console.WriteLine("");*/
-
-        /*int[] TomatoSoup = Reverse(Soup);
-        Console.WriteLine("Reversed:");
-        for(int i = 0; i < TomatoSoup.Length; i++) {
-            Console.Write(TomatoSoup[i] + " ");
-        }
-        Console.WriteLine("");*/
-        int[] ModeOfSoup = Mode(Soup);
-        Console.WriteLine("Modes of Array:");
-        for(int i = 0; i < ModeOfSoup.Length; i++) {
-            Console.Write(ModeOfSoup[i] + " ");
-        }
-        Console.WriteLine("");
+        }*/
     }
 
 //ints \/
