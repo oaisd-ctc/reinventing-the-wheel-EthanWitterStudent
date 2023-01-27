@@ -12,6 +12,13 @@ public class ArrayUtils
     }
 
 //ints \/
+        ///<summary>
+        ///Finds the average of an array
+        ///</summary>
+        ///<param name="Soup"> The array going in </param>
+        ///<returns>
+        ///Average, the average of Soup
+        ///</returns>
     public static int Average (int[] Soup) {
         int Average = 0;
         for(int i = 0; i < Soup.Length; i++) {
@@ -21,6 +28,14 @@ public class ArrayUtils
         return Average;
     }
 
+    
+         ///<summary>
+        ///Finds the largest number in an array
+        ///</summary>
+        ///<param name="Soup"> The Array going in </param>
+        ///<returns>
+        ///Max, the largest number in Soup
+        ///</returns>
     public static int Max (int[] Soup) {
         int Max = 0;
         for(int i = 0; i < Soup.Length; i++) {
