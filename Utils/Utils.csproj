@@ -17,4 +17,12 @@
     </PackageReference>
   </ItemGroup>
 
+    <PropertyGroup>
+  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+</PropertyGroup>
+
+<PropertyGroup>
+  <IsPackable>true</IsPackable>
+</PropertyGroup>
+
 </Project>
